@@ -1,0 +1,395 @@
+running install
+running bdist_egg
+running egg_info
+writing detectron2.egg-info/PKG-INFO
+writing dependency_links to detectron2.egg-info/dependency_links.txt
+writing requirements to detectron2.egg-info/requires.txt
+writing top-level names to detectron2.egg-info/top_level.txt
+reading manifest file 'detectron2.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'detectron2.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+running build_ext
+building 'detectron2._C' extension
+Emitting ninja build file /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+[1/5] /usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+FAILED: /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.o 
+/usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:37:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu:71:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/cpp_dialect.h:74:6: error: #error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/libcxx/include/__config:24:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/__config:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/version.h:41,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/namespace.h:30,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu:71:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/__internal/cpp_dialect.h:40:6: error: #error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_arch.cuh:46:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/config.cuh:46,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_debug.cuh:39,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/config.h:49,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/detail/execution_policy.h:40,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/detail/device_system_tag.h:31,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/iterator_traits.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/type_traits/is_trivially_relocatable.h:37,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:35,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu:71:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_cpp_dialect.cuh:89:8: error: #error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #      error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+        ^~~~~
+/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.cu:76:10: fatal error: ATen/cuda/Atomic.cuh: No such file or directory
+ #include <ATen/cuda/Atomic.cuh>
+          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[2/5] /usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+FAILED: /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.o 
+/usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:37:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.cu:11:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/cpp_dialect.h:74:6: error: #error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/libcxx/include/__config:24:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/__config:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/version.h:41,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/namespace.h:30,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.cu:11:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/__internal/cpp_dialect.h:40:6: error: #error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_arch.cuh:46:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/config.cuh:46,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_debug.cuh:39,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/config.h:49,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/detail/execution_policy.h:40,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/detail/device_system_tag.h:31,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/iterator_traits.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/type_traits/is_trivially_relocatable.h:37,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:35,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.cu:11:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_cpp_dialect.cuh:89:8: error: #error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #      error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+        ^~~~~
+[3/5] /usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+FAILED: /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.o 
+/usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:37:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/cpp_dialect.h:74:6: error: #error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/libcxx/include/__config:24:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/__config:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/version.h:41,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/namespace.h:30,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/__internal/cpp_dialect.h:40:6: error: #error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_arch.cuh:46:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/config.cuh:46,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_debug.cuh:39,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/config.h:49,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/detail/execution_policy.h:40,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/detail/device_system_tag.h:31,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/iterator_traits.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/type_traits/is_trivially_relocatable.h:37,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:35,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_cpp_dialect.cuh:89:8: error: #error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #      error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+        ^~~~~
+[4/5] /usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+FAILED: /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.o 
+/usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:37:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/cpp_dialect.h:74:6: error: #error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/libcxx/include/__config:24:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/__config:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/version.h:41,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/namespace.h:30,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/__internal/cpp_dialect.h:40:6: error: #error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_arch.cuh:46:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/config.cuh:46,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_debug.cuh:39,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/config.h:49,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/detail/execution_policy.h:40,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/detail/device_system_tag.h:31,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/iterator_traits.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/type_traits/is_trivially_relocatable.h:37,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:35,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_cpp_dialect.cuh:89:8: error: #error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #      error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+        ^~~~~
+[5/5] /usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+FAILED: /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.o 
+/usr/local/cuda/bin/nvcc  -DWITH_CUDA -I/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/TH -I/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/scratch/nhaldert/.conda_envs/open-mmlab/include/python3.8 -c -c /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu -o /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/build/temp.linux-x86_64-3.8/nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda_cos6-linux-gnu-cc -std=c++14
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:37:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/cpp_dialect.h:74:6: error: #error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error Thrust requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/libcxx/include/__config:24:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/detail/__config:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/version:14,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/version.h:41,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/namespace.h:30,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config/config.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/detail/config.h:22,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:24,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cuda/std/__internal/cpp_dialect.h:40:6: error: #error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #    error libcu++ requires at least C++ 17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+      ^~~~~
+In file included from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_arch.cuh:46:0,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/config.cuh:46,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_debug.cuh:39,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/config.h:49,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/system/cuda/detail/execution_policy.h:40,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/detail/device_system_tag.h:31,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/iterator/iterator_traits.h:43,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/type_traits/is_trivially_relocatable.h:37,
+                 from /usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/thrust/complex.h:35,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/complex.h:9,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/util/Half.h:14,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/ScalarType.h:5,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/c10/core/Scalar.h:10,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/core/TensorBody.h:8,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /nfs/nfs2/home/nhaldert/work_dir/autonomous-vehicle/BEVFormer/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.cu:2:
+/usr/local/cuda-13.1/targets/x86_64-linux/include/cccl/cub/util_cpp_dialect.cuh:89:8: error: #error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+ #      error CUB requires at least C++17. Define CCCL_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+        ^~~~~
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1666, in _run_ninja_build
+    subprocess.run(
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "setup.py", line 151, in <module>
+    setup(
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/__init__.py", line 153, in setup
+    return distutils.core.setup(**attrs)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py", line 74, in run
+    self.do_egg_install()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py", line 116, in do_egg_install
+    self.run_command('bdist_egg')
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 164, in run
+    cmd = self.call_command('install_lib', warn_dir=0)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 150, in call_command
+    self.run_command(cmdname)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install_lib.py", line 11, in run
+    self.build()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/command/install_lib.py", line 107, in build
+    self.run_command('build_ext')
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 79, in run
+    _build_ext.run(self)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/command/build_ext.py", line 340, in run
+    self.build_extensions()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 709, in build_extensions
+    build_ext.build_extensions(self)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/command/build_ext.py", line 449, in build_extensions
+    self._build_extensions_serial()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/command/build_ext.py", line 474, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 202, in build_extension
+    _build_ext.build_extension(self, ext)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/distutils/command/build_ext.py", line 528, in build_extension
+    objects = self.compiler.compile(sources,
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 530, in unix_wrap_ninja_compile
+    _write_ninja_file_and_compile_objects(
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1355, in _write_ninja_file_and_compile_objects
+    _run_ninja_build(
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1682, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error compiling objects for extension

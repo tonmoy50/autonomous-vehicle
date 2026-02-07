@@ -1,0 +1,69 @@
+running install
+running bdist_egg
+running egg_info
+/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+warning: no files found matching '*.cpp' under directory 'mmdet3d/.mim/ops'
+warning: no files found matching '*.cu' under directory 'mmdet3d/.mim/ops'
+warning: no files found matching '*.h' under directory 'mmdet3d/.mim/ops'
+warning: no files found matching '*.cc' under directory 'mmdet3d/.mim/ops'
+writing manifest file 'mmdet3d.egg-info/SOURCES.txt'
+running install_lib
+running build_py
+running build_ext
+Traceback (most recent call last):
+  File "setup.py", line 192, in <module>
+    setup(
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/__init__.py", line 155, in setup
+    return distutils.core.setup(**attrs)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 148, in setup
+    return run_commands(dist)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 163, in run_commands
+    dist.run_commands()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+    self.run_command(cmd)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py", line 74, in run
+    self.do_egg_install()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install.py", line 116, in do_egg_install
+    self.run_command('bdist_egg')
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 164, in run
+    cmd = self.call_command('install_lib', warn_dir=0)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 150, in call_command
+    self.run_command(cmdname)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/install_lib.py", line 11, in run
+    self.build()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/command/install_lib.py", line 107, in build
+    self.run_command('build_ext')
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+    cmd_obj.run()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 79, in run
+    _build_ext.run(self)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/setuptools/_distutils/command/build_ext.py", line 339, in run
+    self.build_extensions()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 379, in build_extensions
+    self._check_abi()
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 735, in _check_abi
+    check_compiler_abi_compatibility(compiler)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 283, in check_compiler_abi_compatibility
+    if not check_compiler_ok_for_platform(compiler):
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 243, in check_compiler_ok_for_platform
+    which = subprocess.check_output(['which', compiler], stderr=subprocess.STDOUT)
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/subprocess.py", line 415, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/scratch/nhaldert/.conda_envs/open-mmlab/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['which', '/scratch/nhaldert/.conda_envs/open-mmlab/bin/x86_64-conda-linux-gnu-g++']' returned non-zero exit status 1.
