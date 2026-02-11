@@ -381,7 +381,11 @@ def lidiar_render(sample_token, data, out_path=None):
     print("green is ground truth")
     print("blue is the predited result")
     visualize_sample(
-        nusc, sample_token, gt_annotations, pred_annotations, savepath=out_path + "_bev"
+        nusc,
+        sample_token,
+        gt_annotations,
+        pred_annotations,
+        savepath="./out_data/" + out_path + "_bev",
     )
 
 
@@ -510,6 +514,7 @@ def render_sample_data(
     j = 0
     for ind, cam in enumerate(cams):
         sample_data_token = sample["data"][cam]
+        print(pred_data["results"][sample_toekn])
 
         sd_record = nusc.get("sample_data", sample_data_token)
         sensor_modality = sd_record["sensor_modality"]
@@ -544,8 +549,8 @@ def render_sample_data(
             # Init axes.
 
             # Show image.
-            ax[j, ind].imshow(data)
-            ax[j + 2, ind].imshow(data)
+            # ax[j, ind].imshow(data)
+            # ax[j + 2, ind].imshow(data)
 
             # Show boxes.
             if with_anns:
@@ -594,7 +599,12 @@ def render_sample_data(
         ax[j + 2, ind].set_aspect("equal")
 
     if out_path is not None:
-        plt.savefig(out_path + "_camera", bbox_inches="tight", pad_inches=0, dpi=200)
+        plt.savefig(
+            "./out_data/" + out_path + "_camera",
+            bbox_inches="tight",
+            pad_inches=0,
+            dpi=200,
+        )
     if verbose:
         plt.show()
     plt.close()
@@ -611,6 +621,8 @@ if __name__ == "__main__":
     bevformer_results = mmcv.load(
         "test/bevformer_base/Mon_Feb__9_20_34_54_2026/pts_bbox/results_nusc.json"
     )
+    # print(list(bevformer_results["results"].keys())[:10])
+
     sample_token_list = list(bevformer_results["results"].keys())
     for id in range(0, 10):
         render_sample_data(
@@ -619,3 +631,5 @@ if __name__ == "__main__":
             out_path=sample_token_list[id],
             verbose=False,
         )
+        # print(bevformer_results["results"][sample_token_list[id]]["detection_score"])
+        # break
